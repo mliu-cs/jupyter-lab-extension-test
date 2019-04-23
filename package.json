@@ -1,0 +1,42 @@
+{
+  "name": "xkcd-jupyter-lab-tutorial-matthew",
+  "version": "0.1.0",
+  "description": "a tutorial",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/mliu-cs/jupyter-lab-extension-tutorial-matthew",
+  "bugs": {
+    "url": "https://github.com/mliu-cs/jupyter-lab-extension-tutorial-matthew/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "matthew liu",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mliu-cs/jupyter-lab-extension-tutorial-matthew.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^0.19.1"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~3.1.1"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}
